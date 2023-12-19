@@ -1,10 +1,12 @@
 :root {
-    --dark-blue: #023e8a;
-    --ligth-blue: #0077b6;
-    --off-white: #FAF9F6;
+    --off-white: #F0F6F3;
     --light-gray: #c6c6c6;
-    --linear-gradient-main: linear-gradient(to right top, var(--dark-blue), #007a6e, #00898d, #0096af, #00a3d0, #06adef);
-    --linear-gradient-notmain: linear-gradient(to right top, #09203F, #1F446B, #3C5E82, #537895, #6F94A7);
+    --dark-green: #407836;
+    --light-rose: #d27b77;
+    --light-green: #9bbd64;
+
+    --gradient: linear-gradient(to bottom right, var(--dark-green), var(--light-green)) ;
+
     --size-1: 0.25rem;
     --size-2: 0.5rem;
     --size-3: 0.75rem;
@@ -42,18 +44,18 @@ p {
 a {
     font-family: 'Domine', serif;
     text-decoration: none;
-    color: var(--ligth-blue);
+    color: var(--dark-green);
     transform: translate(-50%, -50%);
 }
 
 a:visited {
-    color: var(--ligth-blue);
+    color: var(--light-rose);
 }
 
 
 a:hover {
-    color: white;
-    background: var(--dark-blue);
+    color: var(--off-white);
+    background: var(--light-green);
 }
 
 
@@ -76,7 +78,7 @@ body {
 }
 
 header {
-    background: var(--linear-gradient-notmain);
+    background: var(--gradient);
     color: var(--off-white);
     justify-content: center;
     align-items: center;
@@ -89,7 +91,6 @@ header {
     top: calc(var(--header-height-difference) * -1);
     display: flex;
     align-items: center;
-    box-shadow: var(--box-shadow);         /*wir haben KEINEN box-shadow definiert */
 }
 
 .header-inner {
@@ -150,7 +151,7 @@ section h2 {
 ::marker {
     content: "»";
     font-size: 2em;
-    color: var(--ligth-blue);
+    color: var(--dark-green);
     text-indent: -4em;
 }
 

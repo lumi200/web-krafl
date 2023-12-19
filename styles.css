@@ -127,7 +127,7 @@ header {
 
 section {
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-radius: 4px;
     border-color: var(--light-gray);
     background: var(--off-white);

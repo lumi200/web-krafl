@@ -5,7 +5,7 @@
     --light-rose: #d27b77;
     --light-green: #9bbd64;
 
-    --gradient: linear-gradient(to bottom right, var(--dark-green), var(--light-green)) ;
+    --gradient: linear-gradient(to bottom right, var(--dark-green), var(--light-green));
 
     --size-1: 0.25rem;
     --size-2: 0.5rem;
@@ -138,6 +138,13 @@ section {
     padding: 5px;
 }
 
+@media screen and (max-width:740px) {
+    section {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
 
 section h2 {
     text-align: center;
@@ -159,7 +166,8 @@ li a {
     margin-inline-start: 20px;
 }
 
-ul, ol {
+ul,
+ol {
     max-width: 75ch;
 }
 
@@ -227,7 +235,7 @@ footer p {
 @font-face {
     font-family: 'wkwkregular';
     src: url('res/wkwk-webfont.woff2') format('woff2'),
-         url('res/wkwk-webfont.woff2') format('woff');
+        url('res/wkwk-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -236,7 +244,7 @@ footer p {
 @font-face {
     font-family: 'library_3_amregular';
     src: url('res/library3am-5v3z-webfont.woff2') format('woff2'),
-         url('res/library3am-5v3z-webfont.woff') format('woff');
+        url('res/library3am-5v3z-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -249,30 +257,30 @@ footer p {
 
 }
 
-.center{
+.center {
     text-align: center;
 }
 
-.sans-serif{
+.sans-serif {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.serif{
+
+.serif {
     font-family: 'Times New Roman', Times, serif;
 }
-.slab{
+
+.slab {
     font-family: 'Sanchez', serif;
 }
-.script{
+
+.script {
     font-family: "england_hand_dbregular";
 }
-.handwritten{
+
+.handwritten {
     font-family: 'wkwkregular';
 }
 
-.display{
+.display {
     font-family: 'library_3_amregular';
 }
-
-
-
-

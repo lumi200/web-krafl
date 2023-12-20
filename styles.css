@@ -278,7 +278,6 @@ footer p {
 }
 
 
-
 /*Slider*/
 
 .img-comp-container,
@@ -325,10 +324,11 @@ footer p {
 .flexbox img {
     margin: auto;
 }
+
 .unit {
     font-family: monospace;
     font-size: inherit;
-    background:var(--light-gray);
+    background: var(--light-gray);
     word-wrap: break-word;
     box-decoration-break: clone;
     padding: .1rem .3rem .2rem;

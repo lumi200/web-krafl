@@ -27,7 +27,7 @@
 
 }
 
-img {
+.team-member img{
     max-width: 64px;
     max-height: 64px;
     border-radius: 50%;
@@ -139,6 +139,8 @@ section {
 }
 
 
+
+
 section h2 {
     text-align: center;
 }
@@ -148,14 +150,14 @@ section h2 {
     padding-inline-start: 3.5%;
 }
 
-::marker {
+nav ::marker {
     content: "»";
     font-size: 2em;
     color: var(--dark-green);
     text-indent: -4em;
 }
 
-li a {
+nav li a {
     margin-inline-start: 20px;
 }
 
@@ -274,5 +276,50 @@ footer p {
 }
 
 
+/*Slider*/
 
+.img-comp-container,
+.img-comp-img,
+.img-comp-slider {
+  box-sizing: border-box;
+}
+
+.img-comp-container {
+  position: relative;
+  height: 200px; /* should be the same height as the images */
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  object-position: center;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  width: 40px;
+  height: 40px;
+  background-color: #407836;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: middle; /* Center items vertically */
+}
+
+.flexbox img {
+  margin: auto;
+}
 

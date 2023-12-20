@@ -5,7 +5,7 @@
     --light-rose: #d27b77;
     --light-green: #9bbd64;
 
-    --gradient: linear-gradient(to bottom right, var(--dark-green), var(--light-green)) ;
+    --gradient: linear-gradient(to bottom right, var(--dark-green), var(--light-green));
 
     --size-1: 0.25rem;
     --size-2: 0.5rem;
@@ -26,15 +26,6 @@
     font-family: 'Domine', serif;*/
 
 }
-
-.team-member img{
-    max-width: 64px;
-    max-height: 64px;
-    border-radius: 50%;
-    border-style: solid;
-    border-color: var(--light-gray);
-}
-
 
 p {
     font-family: 'Domine', serif;
@@ -139,8 +130,6 @@ section {
 }
 
 
-
-
 section h2 {
     text-align: center;
 }
@@ -172,6 +161,14 @@ ul, ol {
     margin-bottom: 10px;
     justify-content: center;
     align-content: center;
+}
+
+.team-member img {
+    max-width: 64px;
+    max-height: 64px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: var(--light-rose);
 }
 
 .team-member {
@@ -229,7 +226,7 @@ footer p {
 @font-face {
     font-family: 'wkwkregular';
     src: url('res/wkwk-webfont.woff2') format('woff2'),
-         url('res/wkwk-webfont.woff2') format('woff');
+    url('res/wkwk-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -238,7 +235,7 @@ footer p {
 @font-face {
     font-family: 'library_3_amregular';
     src: url('res/library3am-5v3z-webfont.woff2') format('woff2'),
-         url('res/library3am-5v3z-webfont.woff') format('woff');
+    url('res/library3am-5v3z-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -251,27 +248,31 @@ footer p {
 
 }
 
-.center{
+.center {
     text-align: center;
 }
 
-.sans-serif{
+.sans-serif {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.serif{
+
+.serif {
     font-family: 'Times New Roman', Times, serif;
 }
-.slab{
+
+.slab {
     font-family: 'Sanchez', serif;
 }
-.script{
+
+.script {
     font-family: "england_hand_dbregular";
 }
-.handwritten{
+
+.handwritten {
     font-family: 'wkwkregular';
 }
 
-.display{
+.display {
     font-family: 'library_3_amregular';
 }
 
@@ -281,45 +282,45 @@ footer p {
 .img-comp-container,
 .img-comp-img,
 .img-comp-slider {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .img-comp-container {
-  position: relative;
-  height: 200px; /* should be the same height as the images */
+    position: relative;
+    height: 200px; /* should be the same height as the images */
 }
 
 .img-comp-img {
-  position: absolute;
-  width: auto;
-  height: auto;
-  overflow: hidden;
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
 }
 
 .img-comp-img img {
-  display: block;
-  object-position: center;
+    display: block;
+    object-position: center;
 }
 
 .img-comp-slider {
-  position: absolute;
-  z-index: 9;
-  cursor: ew-resize;
-  width: 40px;
-  height: 40px;
-  background-color: #407836;
-  opacity: 0.7;
-  border-radius: 50%;
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    width: 40px;
+    height: 40px;
+    background-color: #407836;
+    opacity: 0.7;
+    border-radius: 50%;
 }
 
 .flexbox {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center items horizontally */
-  justify-content: middle; /* Center items vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
 }
 
 .flexbox img {
-  margin: auto;
+    margin: auto;
 }
 

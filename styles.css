@@ -61,18 +61,21 @@ a.anchor {
     visibility: hidden;
 }
 
-h1{
+h1 {
     font-family: 'Asul', serif;
     font-size: 3em;
 }
+
 h2 {
     font-family: 'Asul', serif;
     font-size: 2.5em;
 }
+
 h3 {
     font-family: 'Asul', serif;
     font-size: 1.5em;
 }
+
 h4 {
     font-family: 'Asul', serif;
     font-size: 1em;
@@ -106,7 +109,7 @@ header {
     top: 0;
 }
 
-.header-title{
+.header-title {
     transition: font-size .2s ease;
     font-size: 3em;
 }
@@ -136,7 +139,7 @@ header {
     pointer-events: none;
 }
 
-.scrolled  .header-title {
+.scrolled .header-title {
     font-size: 2em;
 }
 
@@ -155,7 +158,7 @@ section {
 
 }
 
-@media screen and (max-width:740px) {
+@media screen and (max-width: 740px) {
     section {
         margin-left: 0px;
         margin-right: 0px;
@@ -211,6 +214,7 @@ ol {
 }
 
 .team-member {
+
     text-align: center;
     justify-self: center;
     align-self: center;
@@ -219,6 +223,7 @@ ol {
 }
 
 .member-name {
+    font-size: 1.5em;
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
@@ -265,7 +270,7 @@ footer p {
 @font-face {
     font-family: 'wkwkregular';
     src: url('res/wkwk-webfont.woff2') format('woff2'),
-        url('res/wkwk-webfont.woff2') format('woff');
+    url('res/wkwk-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -274,7 +279,7 @@ footer p {
 @font-face {
     font-family: 'library_3_amregular';
     src: url('res/library3am-5v3z-webfont.woff2') format('woff2'),
-        url('res/library3am-5v3z-webfont.woff') format('woff');
+    url('res/library3am-5v3z-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -315,8 +320,18 @@ footer p {
     font-family: 'library_3_amregular';
 }
 
+.unit {
+    font-family: monospace;
+    font-size: inherit;
+    background: var(--light-gray);
+    word-wrap: break-word;
+    box-decoration-break: clone;
+    padding: .1rem .3rem .2rem;
+    border-radius: .2rem;
+}
 
 /*Slider*/
+/*still in construction*/
 
 .img-comp-container,
 .img-comp-img,
@@ -359,19 +374,9 @@ footer p {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    /* Center items vertically and horizontally*/
+    padding: 20px;
 }
 
 .flexbox img {
     margin: auto;
-}
-
-.unit {
-    font-family: monospace;
-    font-size: inherit;
-    background: var(--light-gray);
-    word-wrap: break-word;
-    box-decoration-break: clone;
-    padding: .1rem .3rem .2rem;
-    border-radius: .2rem;
 }

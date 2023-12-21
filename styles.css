@@ -22,18 +22,22 @@
     --header-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     --header-height-difference: calc(var(--header-outer-height) - var(--header-inner-height));
 
-    /*font-family: 'Asul', serif;
-    font-family: 'Domine', serif;*/
+    /*Überschriften: 'Asul';
+    Text: 'Work Sans';*/
 
 }
 
-p {
-    font-family: 'Domine', serif;
+p,
+li {
+    font-family: 'Work Sans', 'Arial', sans-serif;
+    /*fallback font arial*/
+    font-size: 1.2em;
     color: black;
 }
 
 a {
-    font-family: 'Domine', serif;
+    font-family: 'Work Sans', 'Arial', sans-serif;
+    font-size: 1.2em;
     text-decoration: none;
     color: var(--dark-green);
     transform: translate(-50%, -50%);
@@ -57,10 +61,21 @@ a.anchor {
     visibility: hidden;
 }
 
-h1,
-h2,
+h1{
+    font-family: 'Asul', serif;
+    font-size: 3em;
+}
+h2 {
+    font-family: 'Asul', serif;
+    font-size: 2.5em;
+}
 h3 {
     font-family: 'Asul', serif;
+    font-size: 2em;
+}
+h4 {
+    font-family: 'Asul', serif;
+    font-size: 1.5em;
 }
 
 body {
@@ -302,7 +317,7 @@ footer p {
 
 .img-comp-container {
     position: relative;
-    height: 200px;
+    height: 300px;
     /* should be the same height as the images */
 }
 
@@ -333,9 +348,8 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Center items horizontally */
-    justify-content: center;
-    /* Center items vertically */
+    justify-items: center;
+    /* Center items vertically and horizontally*/
 }
 
 .flexbox img {

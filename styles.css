@@ -126,13 +126,16 @@ section {
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 2%;
-    padding: 5px;
+    padding: 5em;
 }
 
 @media screen and (max-width:740px) {
     section {
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-radius: 0px;
+        padding: 1em;
+
     }
 }
 
@@ -234,7 +237,7 @@ footer p {
 @font-face {
     font-family: 'wkwkregular';
     src: url('res/wkwk-webfont.woff2') format('woff2'),
-    url('res/wkwk-webfont.woff2') format('woff');
+        url('res/wkwk-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -243,7 +246,7 @@ footer p {
 @font-face {
     font-family: 'library_3_amregular';
     src: url('res/library3am-5v3z-webfont.woff2') format('woff2'),
-    url('res/library3am-5v3z-webfont.woff') format('woff');
+        url('res/library3am-5v3z-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -295,7 +298,8 @@ footer p {
 
 .img-comp-container {
     position: relative;
-    height: 200px; /* should be the same height as the images */
+    height: 200px;
+    /* should be the same height as the images */
 }
 
 .img-comp-img {
@@ -324,8 +328,10 @@ footer p {
 .flexbox {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    justify-content: center;
+    /* Center items vertically */
 }
 
 .flexbox img {

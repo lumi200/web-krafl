@@ -106,6 +106,10 @@ header {
     top: 0;
 }
 
+.header-title{
+    transition: font-size .2s ease;
+}
+
 .header-subtitle {
     position: absolute;
     top: 80%;
@@ -131,6 +135,9 @@ header {
     pointer-events: none;
 }
 
+.scrolled  .header-title {
+    font-size: 2em;
+}
 
 section {
     border-style: solid;

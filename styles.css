@@ -129,6 +129,13 @@ section {
     padding: 5px;
 }
 
+@media screen and (max-width:740px) {
+    section {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
 
 section h2 {
     text-align: center;

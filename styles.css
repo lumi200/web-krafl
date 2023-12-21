@@ -71,11 +71,11 @@ h2 {
 }
 h3 {
     font-family: 'Asul', serif;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 h4 {
     font-family: 'Asul', serif;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 body {
@@ -108,6 +108,7 @@ header {
 
 .header-title{
     transition: font-size .2s ease;
+    font-size: 3em;
 }
 
 .header-subtitle {
@@ -184,6 +185,7 @@ nav ::marker {
 
 nav li a {
     margin-inline-start: 20px;
+    font-size: 1em;
 }
 
 ul,
@@ -326,6 +328,7 @@ footer p {
     position: relative;
     height: 300px;
     /* should be the same height as the images */
+    margin-left: -300px;
 }
 
 .img-comp-img {

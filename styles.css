@@ -27,15 +27,6 @@
 
 }
 
-img {
-    max-width: 64px;
-    max-height: 64px;
-    border-radius: 50%;
-    border-style: solid;
-    border-color: var(--light-gray);
-}
-
-
 p {
     font-family: 'Domine', serif;
     color: black;
@@ -155,14 +146,14 @@ section h2 {
     padding-inline-start: 3.5%;
 }
 
-::marker {
+nav ::marker {
     content: "»";
     font-size: 2em;
     color: var(--dark-green);
     text-indent: -4em;
 }
 
-li a {
+nav li a {
     margin-inline-start: 20px;
 }
 
@@ -178,6 +169,14 @@ ol {
     margin-bottom: 10px;
     justify-content: center;
     align-content: center;
+}
+
+.team-member img {
+    max-width: 64px;
+    max-height: 64px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: var(--light-rose);
 }
 
 .team-member {
@@ -235,7 +234,7 @@ footer p {
 @font-face {
     font-family: 'wkwkregular';
     src: url('res/wkwk-webfont.woff2') format('woff2'),
-        url('res/wkwk-webfont.woff2') format('woff');
+    url('res/wkwk-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -244,7 +243,7 @@ footer p {
 @font-face {
     font-family: 'library_3_amregular';
     src: url('res/library3am-5v3z-webfont.woff2') format('woff2'),
-        url('res/library3am-5v3z-webfont.woff') format('woff');
+    url('res/library3am-5v3z-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -284,3 +283,52 @@ footer p {
 .display {
     font-family: 'library_3_amregular';
 }
+
+
+/*Slider*/
+
+.img-comp-container,
+.img-comp-img,
+.img-comp-slider {
+    box-sizing: border-box;
+}
+
+.img-comp-container {
+    position: relative;
+    height: 200px; /* should be the same height as the images */
+}
+
+.img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.img-comp-img img {
+    display: block;
+    object-position: center;
+}
+
+.img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    width: 40px;
+    height: 40px;
+    background-color: #407836;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+.flexbox img {
+    margin: auto;
+}
+

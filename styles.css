@@ -74,6 +74,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: var(--size-7);
+    z-index: 10;
 }
 
 .header-sticky {

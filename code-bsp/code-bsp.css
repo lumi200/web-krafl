@@ -81,9 +81,13 @@ header {
 }
 
 
+
 .example {
     height: 35em;
     width: 80%;
-    padding-left: 10%;
+    max-width: 100ch;
+    margin-inline: auto;
 }
+
+
 

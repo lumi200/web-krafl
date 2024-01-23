@@ -12,10 +12,11 @@
     --size-3: 0.75rem;
     --size-4: 1rem;
     --size-5: 1.25rem;
-    --size-6: 1.5rem;
-    --size-7: 1.75rem;
-    --size-8: 2rem;
-    --size-9: 2.5rem;
+    --size-6: 1.56rem; /* 1.25 * 1.25*/
+    --size-7: 1.95rem; /* 1.56 * 1.25*/
+    --size-8: 2.43rem; /* 1.95 * 1.25*/
+    --size-9: 3.03rem;  /* 2.43 * 1.25*/
+
 
     --header-outer-height: 140px;
     --header-inner-height: 50px;
@@ -31,13 +32,13 @@ p,
 li {
     font-family: 'Work Sans', 'Arial', sans-serif;
     /*fallback font arial*/
-    font-size: 1.2em;
+    font-size: var(--size-5); /*1.2em;*/
     color: black;
 }
 
 a {
     font-family: 'Work Sans', 'Arial', sans-serif;
-    font-size: 1.2em;
+    font-size: var(--size-5); /*1.2em;*/
     text-decoration: none;
     color: var(--dark-green);
     transform: translate(-50%, -50%);
@@ -63,22 +64,22 @@ a.anchor {
 
 h1 {
     font-family: 'Asul', serif;
-    font-size: 3em;
+    font-size: var(--size-9); /*3em;*/
 }
 
 h2 {
     font-family: 'Asul', serif;
-    font-size: 2.5em;
+    font-size: var(--size-8); /*2.5em;*/
 }
 
 h3 {
     font-family: 'Asul', serif;
-    font-size: 1.5em;
+    font-size: var(--size-6); /*1.5em;*/
 }
 
 h4 {
     font-family: 'Asul', serif;
-    font-size: 1em;
+    font-size: var(--size-4); /*1em;*/
 }
 
 body {
@@ -111,7 +112,7 @@ header {
 
 .header-title {
     transition: font-size .2s ease;
-    font-size: 3em;
+    font-size: var(--size-9); /*3em*/
 }
 
 .header-subtitle {
@@ -140,22 +141,26 @@ header {
 }
 
 .scrolled .header-title {
-    font-size: 2em;
+    font-size: var(--size-7); /*2em*/
 }
 
 section {
     border-style: solid;
-    border-width: 2px;
-    border-radius: 4px;
+    border-width: 0px;
+    border-radius: 2px;
     border-color: var(--light-gray);
     background: var(--off-white);
-    margin: 5px;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 2%;
+
+    /*  margin: 5px; 
+     margin-left: 17%;
+    margin-right: 17%;
+    margin-bottom: 2%; got replaced my margin-inline */
+
+    max-width: 80ch;
+    margin-inline: auto;
+
     padding-left: 5em;
     padding-right: 5em;
-
 }
 
 @media screen and (max-width: 740px) {
@@ -181,14 +186,14 @@ section h2 {
 
 nav ::marker {
     content: "»";
-    font-size: 2em;
+    font-size: var(--size-7);/*2em*/
     color: var(--dark-green);
     text-indent: -4em;
 }
 
 nav li a {
     margin-inline-start: 20px;
-    font-size: 1em;
+    font-size: var(--size-4) /*1em*/;
 }
 
 ul,

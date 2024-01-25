@@ -1,7 +1,7 @@
 body {
     font-size: 1em;
 }
-@media screen and (min-width: 800px) {
+@media screen and (resolution <= 2dppx) {
     body {
         font-size: 1.5em;
     }

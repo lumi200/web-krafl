@@ -1,25 +1,6 @@
 body {
     font-size: 1em;
 }
-@media screen and (min-width: 800px) {
-    body {
-        font-size: 1.5em;
-    }
-
-    .smaller {
-        font-size: 1em;
-    }
-
-    .center h1 {
-        font-size: 4em;
-    }
-
-    .center {
-        width: 80%;
-        margin-left: 10%;
-     }
-}
-
         
 p {
     font-size: 1em;
@@ -55,9 +36,30 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     width: 90%;
-    padding-left: 5%;
+    margin: 5%;
  }
 
  .handwritten-font {
     font-family: 'wkwkregular';
+    font-size: 1.5em;
  }
+
+ @media screen and (min-width: 800px) {
+    body {
+        font-size: 1.5em;
+    }
+
+    .center h1 {
+        font-size: 3em;
+    }
+
+    .center {
+        width: 80%;
+        margin-left: 10%;
+     }
+     .content {
+        width: 60%;
+        margin-left: 20%;
+     }
+}
+

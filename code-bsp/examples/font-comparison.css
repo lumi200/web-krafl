@@ -1,0 +1,94 @@
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6px;
+    row-gap: 6px;
+}
+
+.item {
+    border: 2px solid black;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+h2 {
+    margin-bottom: 1px;
+}
+p {
+    margin-top: 2px;
+}
+
+
+
+.bad1 h2{
+   font-family: 'MuseoModerno', sans-serif; 
+}
+
+.bad1 p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.good1 h2{
+    font-family: 'Kanit', sans-serif;
+}
+
+.good1 p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bad2 h2{
+    font-family: 'Homemade Apple', cursive;
+}
+
+.bad2 p{
+    font-family: 'Inconsolata', monospace;
+}
+
+.good2 h2 {
+    font-family: 'Hepta Slab', serif;
+}
+
+.good2 p{
+    font-family: 'Inconsolata', monospace;
+}
+
+.bad3 h2{
+    font-family: 'Homemade Apple', cursive;
+}
+
+.bad3 p{
+    font-family: 'Inconsolata', monospace;
+}
+
+.good3 h2 {
+    font-family: 'Homemade Apple', cursive;
+}
+
+.good3 p{
+    font-family: 'Junge', cursive;
+}
+
+.bad4 h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 4em;
+}
+
+.bad4 p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.5em;
+}
+
+.good4 h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 2em
+}
+
+.good4 p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}

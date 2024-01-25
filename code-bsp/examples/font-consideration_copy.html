@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="consid.css">
+  <script src="./scripts/scrollslide.js"></script>
+  <script src="./scripts/bestslider.js"></script>
+</head>
+<body>
+
+ <div class="container" dir="ltr" id="container">
+
+  <div class="flexbox">
+    <div class="img-comp-container">
+        <div class="img-comp-img">
+            <img src="./images/code_xmpl_artan_raw.png" alt="a fox">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+            <img src="./images/code_xmpl_artan_raw.png" alt="turtle emoji" width="300" height="300">
+        </div>
+    </div> 
+  </div>
+
+
+  <div class="codebox">
+    <header>
+      <span></span>
+      <span></span>
+      <span></span>
+    </header>
+    <main>
+      <pre>.codebox header span:nth-child(n) {
+        margin-right: 6px; /* Adjust the margin as needed */
+      }
+      
+      .codebox header span:nth-child(1) {
+        background-color: #ff5c5c;
+      }
+      
+      .codebox header span:nth-child(2) {
+        background-color: #ffbd4c;
+      }
+      
+      .codebox header span:nth-child(3) {
+        background-color: #00ca56;
+      }
+}</pre>
+    </main>
+  </div>
+  <div class="codebox">
+    <header>
+      <span></span>
+      <span></span>
+      <span></span>
+    </header>
+    <main>
+      <pre>function helloWorld() {
+  console.log("Hello World")
+}</pre>
+    </main>
+  </div>
+</div>
+
+<div class="button-box">
+  <button onClick="goToSlide(0)">First</button>
+  <button onClick="goToSlide(1)">Second</button>
+  <button onClick="goToSlide(2)">Third</button>
+</div>
+<script>
+  initComparisons();
+</script>
+
+</body>
+
+</html>

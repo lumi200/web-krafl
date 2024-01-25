@@ -98,15 +98,7 @@ body {
     background: #407836;
     cursor: pointer;
   }
-  
-  .slider::-webkit-slider-thumb:active {
-    cursor: -webkit-grabbing;
-  }
-  
-  .slider::-moz-range-thumb:active {
-    cursor: -moz-grabbing;
-  }
-  
+
   .button {
     background: #fff;
     border: 3px solid #dee7ec;
@@ -129,13 +121,13 @@ body {
 .normal h1 {
     color: #407836;
     font-family: 'Asul', serif;
-    font-size: var(3em); 
+    font-size: 3em;
     
 }
 
 .normal p, a{
     font-family: 'Work Sans', 'Arial', sans-serif;
-    font-size: var(1.2em);
+    font-size: 1.2em;
     color: black;
     margin: 0;
 }

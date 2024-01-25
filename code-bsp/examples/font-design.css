@@ -2,7 +2,8 @@ body {
     font-size: 1em;
 }
 
-        
+
+
 p {
     font-size: 1em;
 }
@@ -37,14 +38,15 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     width: 90%;
-    padding-left: 5%;
+    margin-left: 5%;
  }
 
  .handwritten-font {
     font-family: 'wkwkregular';
  }
 
- @media screen and (resolution <= 2dppx) {
+
+@media screen and (resolution <= 2dppx) {
     body {
         font-size: 1.5em;
     }
@@ -57,8 +59,13 @@ p {
         font-size: 4em;
     }
 
-    .content {
+    .center {
         width: 60%;
         margin-left: 20%;
      }
+    
+    .content {
+        width: 60%;
+        margin-left: 20%;
+    }
 }

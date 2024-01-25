@@ -1,24 +1,6 @@
 body {
     font-size: 1em;
 }
-@media screen and (resolution <= 2dppx) {
-    body {
-        font-size: 1.5em;
-    }
-
-    .smaller {
-        font-size: 1em;
-    }
-
-    .center h1 {
-        font-size: 4em;
-    }
-
-    .content {
-        width: 60%;
-        margin-left: 20%;
-     }
-}
 
         
 p {
@@ -61,3 +43,22 @@ p {
  .handwritten-font {
     font-family: 'wkwkregular';
  }
+
+ @media screen and (resolution <= 2dppx) {
+    body {
+        font-size: 1.5em;
+    }
+
+    .smaller {
+        font-size: 1em;
+    }
+
+    .center h1 {
+        font-size: 4em;
+    }
+
+    .content {
+        width: 60%;
+        margin-left: 20%;
+     }
+}

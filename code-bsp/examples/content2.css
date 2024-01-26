@@ -1,16 +1,18 @@
-
+/* add global variables */ 
 :root {
     --color-dark: #252525;
     --color-light: #efefef;
     --color-primary: #1a8fe3;
+
+    /* typescales create a good rhythm and flow, and consistency */
     --size-step-0: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
     --size-step-1: clamp(1.25rem, calc(1.16rem + 0.43vw), 1.5rem);
     --size-step-2: clamp(1.56rem, calc(1.41rem + 0.76vw), 2rem);
     --size-step-3: clamp(1.95rem, calc(1.71rem + 1.24vw), 2.66rem);
     --size-step-4: clamp(2.44rem, calc(2.05rem + 1.93vw), 3.55rem);
-    
+    /* clamp and calc create fluid types, thanks to the Utopia calculator making the */
   }
-  
+
 .content2 {
     width: 60vw;
     background: var(--color-light);
@@ -18,8 +20,8 @@
     padding: 2em;
     font-family: Georgia, serif;
     font-size: var(--size-step-0);
-    max-width: 65ch;
-    margin-inline: auto;
+    max-width: 65ch; /* set to center the content*/ 
+    margin-inline: auto; 
   }
 
 .content2 a {
@@ -79,7 +81,6 @@
     text-wrap: balance;
   }
   
-
   .flow > * + * {
     margin-block-start: var(--flow-space, 1em);
   }
@@ -91,3 +92,31 @@
   .content2 :is(h1, h2, h3, *) {
     --flow-space: 0.5em;
   }
+
+  @media screen and (max-width: 600px) {
+    .content2 {
+        width: 90vw;
+        background: var(--color-light);
+        color: var(--color-dark);
+        padding: 2em;
+        font-family: Georgia, serif;
+        font-size: var(--size-step-0);
+        max-width: 65ch;
+        margin-left: 100px; /* last ditch responsiblity effort*/
+      }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .content2 html:focus-within {
+    scroll-behavior: auto;
+  }
+  .content2 *,
+  .content2 *::before,
+  .content2 *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

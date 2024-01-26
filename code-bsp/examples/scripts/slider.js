@@ -55,7 +55,7 @@
       /* Get the cursor's x position: */
       pos = getCursorPos(e)
       /* Prevent the slider from being positioned outside the image: */
-      if (pos < 0) pos = 0;
+      if (pos < 10) pos = 0;
       if (pos > w) pos = w;
       /* Execute a function that will resize the overlay image according to the cursor: */
       slide(pos);
@@ -77,7 +77,7 @@
       /* Resize the image: */
       img.style.width = x + "px";
       /* Position the slider: */
-      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px" ;
     }
   }
 } 

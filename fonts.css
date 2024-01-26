@@ -23,12 +23,6 @@
 
 }
 
-
-@font-face {
-    font-family: 'Kyiv_type_Sans';
-    src: url('./res/KyivTypeSans-VarGX.ttf') format('truetype');   
-}
-
 @font-face {
     font-family: 'summerbee';
     src: url('./code-bsp/res/Summerbee.ttf') format('truetype');

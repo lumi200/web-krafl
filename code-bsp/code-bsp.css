@@ -80,14 +80,21 @@ header {
     font-size: 2em;
 }
 
-
-
 .example {
-    height: 35em;
-    width: 80%;
+    height: 60em;
+    width: 100%;
     max-width: 100ch;
     margin-inline: auto;
 }
+
+
+.example1 {
+    height: 36em;
+    width:100%;
+    max-width: 100ch;
+    margin-inline: auto;
+}
+
 
 
 

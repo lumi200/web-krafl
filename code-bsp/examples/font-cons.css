@@ -1,0 +1,61 @@
+  
+  .img-comp-img.img-comp-overlay {
+    background-color: white;
+}
+
+.img-comp-container,
+.img-comp-img,
+.img-comp-slider {
+    box-sizing: border-box;
+}
+
+.img-comp-container {
+    position: relative;
+    height: 300px;
+    /* should be the same height as the images */
+    margin-left: -300px;
+}
+
+.img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+} 
+
+.img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    width: 0.5vw;
+    height: 100vw;
+    background-color: #407836;
+    opacity: 0.2;
+}
+.img-comp-slider:hover {
+    opacity: 0.8;
+
+}
+
+/* @media screen and (max-width: 800px) {
+
+    .flexbox {
+        display:grid;
+        justify-content: center;
+        }
+
+    .img-comp-img {
+        left: 50%;  width: 100%;
+    }
+ }*/
+
+
+.flexbox {
+ display:grid;
+ justify-content: center;
+ }
+
+
+.content {
+    width: 60vw;
+}

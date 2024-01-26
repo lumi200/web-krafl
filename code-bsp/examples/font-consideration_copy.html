@@ -1,35 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="consid.css">
-  <script src="./scripts/scrollslide.js"></script>
-  <script src="./scripts/bestslider.js"></script>
+    <meta charset="UTF-8">
+    <title>font consideration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="consid.css">
+    <link rel="stylesheet" href="./../codebox.css">
+    <script src="./scripts/scrollslide.js"></script>
+    <script src="./scripts/bestslider.js"></script>
 </head>
 <body>
 
- <div class="container" dir="ltr" id="container">
+<div class="container" dir="ltr" id="container">
 
-  <div class="flexbox">
-    <div class="img-comp-container">
-        <div class="img-comp-img">
-            <img src="./images/code_xmpl_artan_raw.png" alt="a fox">
-        </div>
-        <div class="img-comp-img img-comp-overlay">
-            <img src="./images/code_xmpl_artan_raw.png" alt="turtle emoji" width="300" height="300">
-        </div>
-    </div> 
+  <div class="slide-container">
+    <div class="content">
+      <h2>About the Pirates</h2>
+      <p>Case shot draught flogging cackle fruit tackle belaying pin strike colors ballast fluke dead men tell no tales.
+          <blockquote>
+              <q>Me league hulk rigging spanker aye crimp Brethren of the Coast black jack Barbary Coast.</q>
+          </blockquote>
+          Fathom bowsprit rigging mizzen Plate Fleet cog cutlass walk the plank clap of thunder fore. Yellow Jack crimp
+          hempen halter Arr belaying pin Barbary Coast draught scurvy league gally. Broadside clap of thunder furl
+          pirate wherry to go on account quarter hempen halter spanker hogshead. Jack Tar walk the plank marooned pink
+          gun furl weigh anchor landlubber or just lubber belay gangway.
+      </p>
+
+      <h3>Life on the High Seas</h3>
+      <p>Stormy seas, fierce battles, and hidden treasures awaited the crew. The pirate's life was one of adventure
+          and peril. Belaying pin run a shot across the bowlist Plate Fleet scallywag handsomely topgallant avast. Sail
+          ho clipper ye parrel yardarm keelhaul walk the plank bring a spring upon her cable.
+      </p>
+
+      <h3>The Pirate Code</h3>
+      <p>Every pirate crew adhered to a set of unwritten rules known as the Pirate Code. Avast transom ahoy pink
+          cutlass skysail sloop booty fathom heave to. Pirate Round pillage tack gangplank marooned fire ship reef
+          sails bilge.
+      </p>
   </div>
+</div>
 
+<div class="slide-container">
+  <div class="content">
+    <h2>About the Pirates</h2>
+    <p>Case shot draught flogging cackle fruit tackle belaying pin strike colors ballast fluke dead men tell no tales.
+        <blockquote>
+            <q>Me league hulk rigging spanker aye crimp Brethren of the Coast black jack Barbary Coast.</q>
+        </blockquote>
+        Fathom bowsprit rigging mizzen Plate Fleet cog cutlass walk the plank clap of thunder fore. Yellow Jack crimp
+        hempen halter Arr belaying pwerg .jkbfweraiohöwafecuhiop qewrfcguil4wtecguzilin Barbary Coast draught scurvy league gally. Broadside clap of thunder furl
+        pirate wherry to go on account quarter hempen halter spanker hogshead. Jack Tar walk the plank marooned pink
+        gun furl weigh anchor landlubber or just lubber belay gangway.
+    </p>
 
-  <div class="codebox">
-    <header>
-      <span></span>
-      <span></span>
-      <span></span>
-    </header>
-    <main>
+    <h3>Life on the High Seas</h3>
+    <p>Stormy seas, fierce battles, and hidden treasures awaited the crew. The pirate's life was one of adventure
+        and peril. Belaying pin run a shot across the bowlist Plate Fleet scallywag handsomely topgallant avast. Sail
+        ho clipper ye parrel yardarm keelhaul walk the plank bring a spring upon her cable.
+    </p>
+
+    <h3>The Pirate Code</h3>
+    <p>Every pirate crew adhered to a set of unwritten rules known as the Pirate Code. Avast transom ahoy pink
+        cutlass skysail sloop booty fathom heave to. Pirate Round pillage tack gangplank marooned fire ship reef
+        sails bilge.
+    </p>
+  </div>
+</div>
+
+<div class="slide-container">
+    <div class="codebox">
+        <header>
+            <span></span>
+            <span></span>
+            <span></span>
+        </header>
+        <main>
       <pre>.codebox header span:nth-child(n) {
         margin-right: 6px; /* Adjust the margin as needed */
       }
@@ -46,29 +91,43 @@
         background-color: #00ca56;
       }
 }</pre>
-    </main>
+        </main>
+    </div>
   </div>
-  <div class="codebox">
-    <header>
-      <span></span>
-      <span></span>
-      <span></span>
-    </header>
-    <main>
+
+  <div class="slide-container">
+    <div class="codebox">
+        <header>
+            <span></span>
+            <span></span>
+            <span></span>
+        </header>
+        <main>
       <pre>function helloWorld() {
   console.log("Hello World")
 }</pre>
-    </main>
-  </div>
+        </main>
+    </div>
 </div>
 
+
+
+
+
+</div>
+
+
+
+
+
 <div class="button-box">
-  <button onClick="goToSlide(0)">First</button>
-  <button onClick="goToSlide(1)">Second</button>
-  <button onClick="goToSlide(2)">Third</button>
+    <button onClick="goToSlide(0)">Untouched</button>
+    <button onClick="goToSlide(1)">Enhanced</button>
+    <button onClick="goToSlide(2)">HTML</button>
+    <button onClick="goToSlide(3)">HTML</button>
 </div>
 <script>
-  initComparisons();
+    initComparisons();
 </script>
 
 </body>

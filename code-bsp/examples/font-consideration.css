@@ -1,108 +1,169 @@
-*,
-*::before,
-*::after {
+
+/*Slider*/
+.container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Adjust the gap between buttons as needed */
+}
+
+.button-box button {
+  font-size: large;
+  background-color: #407836;
+  color: white;
+  border-radius: 10%;
+}
+
+.container > div {
+  text-align: center;
+  scroll-snap-align: center;
+  flex: none;
+  width: 100vw; /* Set the width of each slide to the viewport width */
+}
+
+img {
+  max-width: 100%;
+}
+
+#container {
+  scroll-snap-type: x proximity;
+  overflow-x: hidden; /* Hide the horizontal scrollbar */
+  overflow-y: hidden; /* Hide the vertical scrollbar and cut off content */
+  border: 2px solid var(--gs0);
+  border-radius: 0px;
+  height: fit-content; /* Adjusted height to 800 pixels */
+}
+
+#container div {
+  scroll-snap-align: end;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  height: 500px;
+}
+
+/* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+#container::-webkit-scrollbar {
+  display: none;
+}
+
+* {
   box-sizing: border-box;
 }
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  padding: 20px;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-
 
 .img-comp-container,
 .img-comp-img,
 .img-comp-slider {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .img-comp-container {
-    position: relative;
-    height: 300px;
-    /* should be the same height as the images */
-    margin-left: -300px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 800px; /* should be the same height as the images */
 }
 
+
 .img-comp-img {
-    position: absolute;
-    width: auto;
-    height: auto;
-    overflow: hidden;
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
 }
 
 .img-comp-img img {
-    display: block;
-    object-position: center;
+  display: block;
+  object-position: center;
 }
 
 .img-comp-slider {
-    position: absolute;
-    z-index: 9;
-    cursor: ew-resize;
-    width: 40px;
-    height: 40px;
-    background-color: #407836;
-    opacity: 0.7;
-    border-radius: 50%;
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  width: 10px; /* Adjust the width of the slider */
+  height: 100%; /* Set the height to 100% to cover the full height of the image */
+  background-color: #407836;
+  opacity: 0.7;
+  border-radius: 5px; /* Adjust the border-radius as needed */
 }
 
+
 .flexbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
 }
 
 .flexbox img {
-    margin: auto;
+  margin: auto;
 }
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.codebox {
+  background-color: #222;
+  border-radius: 6px;
+  max-width: 100%;
+  box-shadow: 1px 3px 18px 0 rgba(#222, 0.5);
+}
+
+.codebox header {
+  padding: 12px 15px;
+  background-color: #444;
+  border-radius: 12px 12px 0 0;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+}
+
+.codebox header span {
+  height: 16px;
+  width: 16px;
+  margin-right: 6px;
+  background-color: red;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Move the spans to the left */
+.codebox header span:nth-child(n) {
+  margin-right: 6px; /* Adjust the margin as needed */
+}
+
+.codebox header span:nth-child(1) {
+  background-color: #ff5c5c;
+}
+
+.codebox header span:nth-child(2) {
+  background-color: #ffbd4c;
+}
+
+.codebox header span:nth-child(3) {
+  background-color: #00ca56;
+}
+
+
+
+  main {
+    padding: 12px 15px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: left;
+  }
+

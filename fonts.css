@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'wkwkregular';
-    src: url('./../res/wkwk-webfont.woff2') format('woff2'),
-    url('./../res/wkwk-webfont.woff2') format('woff');
+    src: url('./res/wkwk-webfont.woff2') format('woff2'),
+    url('./res/wkwk-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -9,15 +9,15 @@
 
 @font-face {
     font-family: 'library_3_amregular';
-    src: url('./../res/library3am-5v3z-webfont.woff2') format('woff2'),
-    url('./../res/library3am-5v3z-webfont.woff') format('woff');
+    src: url('./res/library3am-5v3z-webfont.woff2') format('woff2'),
+    url('./res/library3am-5v3z-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'england_hand_dbregular';
-    src: url('./../res/england-webfont.woff') format('woff');
+    src: url('./res/england-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

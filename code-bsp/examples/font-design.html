@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./../fonts.css">
     <link rel="stylesheet" href="./../codebox.css">
     <title>Font Design</title>
-
 </head>
 
 <body>
@@ -17,12 +16,13 @@
     <p class="smaller">Why font design matters and what to do?</p>
 </header>
 <div class="content">
-    <p>In this design, the text dynamically adjusts its size for a seamless experience on various screen sizes. 
-       Having a bigger size on desktop devices and smaller size on mobile devices, makes the text easier to read.
-       The header uses a unique display font to stand out and feel unique. It also scales to 3em on bigger screens,
-       while the body text employs a sans-serif font  and scales to 1.5em on bigger screens for easy reading. 
-       The signature is presented in a handwritten font, adding a personal touch. 
-       Thoughtful font choices and responsive design make the text visually appealing and well-suited for different screen sizes.</p>
+    <p>In this design, the text dynamically adjusts its size for a seamless experience on various screen sizes.
+        Having a bigger size on desktop devices and smaller size on mobile devices, makes the text easier to read.
+        The header uses a unique display font to stand out and feel unique. It also scales to 3em on bigger screens,
+        while the body text employs a sans-serif font and scales to 1.5em on bigger screens for easy reading.
+        The signature is presented in a handwritten font, adding a personal touch.
+        Thoughtful font choices and responsive design make the text visually appealing and well-suited for diverse
+        devices and user preferences.</p>
 
     Written by<br>
     <div class="handwritten-font">Something</div>
@@ -34,18 +34,24 @@
         <span></span>
         <span></span>
     </header>
-  <pre><code class="language-css">
+    <pre><code class="language-css">
     body {
         font-size: 1em;
     }
-    
+
     header {
         width: 100%;
         text-align: center;
     }
-    
+
     p {
         font-size: 1em;
+    }
+      
+    .center {
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
     }
     
     .center p,
@@ -90,13 +96,19 @@
             font-size: 3em;
         }
     
+        .center {
+            width: 80%;
+            margin-left: 10%;
+        }
+    
         .content {
             width: 60%;
             margin-left: 20%;
         }
     }
-</code>
-</pre>
+    </code>
+    </pre>
+</div>
 </body>
 
 

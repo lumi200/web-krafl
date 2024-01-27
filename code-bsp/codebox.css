@@ -1,12 +1,12 @@
 .codebox {
     background-color: #222;
     border-radius: 6px;
-    max-width: 100%;    
+    max-width: 100%;
     box-shadow: 1px 3px 18px 0 rgba(2, 2, 2, 0.7);
     color: white;
 }
 
-.codebox header {    
+.codebox header {
     padding-top: 12px;
     padding-bottom: 15px;
     background-color: #444;

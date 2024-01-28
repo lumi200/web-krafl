@@ -15,8 +15,8 @@
     --size-03: 1.56rem; /* 1.25 * 1.25*/
     --size-04: 1.95rem; /* 1.56 * 1.25*/
     --size-05: 2.43rem; /* 1.95 * 1.25*/
-    --size-06: 3.03rem;  /* 2.43 * 1.25*/
- 
+    --size-06: 3.03rem; /* 2.43 * 1.25*/
+
 
     --header-outer-height: 140px;
     --header-inner-height: 50px;
@@ -51,9 +51,8 @@ a:visited {
 
 
 a:hover {
-  text-decoration: underline var(--light-green);
+    text-decoration: underline var(--light-green);
 }
-
 
 
 a.anchor {
@@ -62,10 +61,11 @@ a.anchor {
     top: -60px;
     visibility: hidden;
 }
-h1, h2, h3, h4{
-  font-family: 'Asul', serif;
-  font-weight: 800;
-  line-height: 1.1;
+
+h1, h2, h3, h4 {
+    font-family: 'Asul', serif;
+    font-weight: 800;
+    line-height: 1.1;
 }
 
 h1 {
@@ -158,7 +158,7 @@ section {
     width: clamp(250px, 50vw, 800px);
     margin-left: 60px;
     margin-right: 20px;
-    margin-bottom : 60px;
+    margin-bottom: 60px;
     padding-left: 18px;
     padding-right: 28px;
     padding-bottom: 40px;
@@ -166,53 +166,52 @@ section {
 }
 
 @media screen and (max-width: 1000px) {
-  section {
-      border-radius: 0;
-      padding-left: 1em;
-      padding-right: 1em;
-      margin-left: auto;  /* Center the section horizontally */
-      margin-right: auto; /* Center the section horizontally */
-      width: 80%; /* Make the section full width on mobile */
-  }
+    section {
+        border-radius: 0;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-left: auto; /* Center the section horizontally */
+        margin-right: auto; /* Center the section horizontally */
+        width: 80%; /* Make the section full width on mobile */
+    }
 
-  nav {
-      display: none !important;
-  }
+    nav {
+        display: none !important;
+    }
 }
-
 
 
 section h2 {
 
-    word-wrap :break-word; 
+    word-wrap: break-word;
 }
 
 nav {
-  position: sticky;
-  left: 20px;
-  top: 100px;
-  height: 100%; /* Adjust this height based on your design */
-  width: 250px; /* Adjust the width based on your design */
-  background-color: var(--off-white);
-  padding: 20px;
-  z-index: 10; /* Ensure the navigation bar is above other elements */
+    position: sticky;
+    left: 20px;
+    top: 100px;
+    height: 100%; /* Adjust this height based on your design */
+    width: 250px; /* Adjust the width based on your design */
+    background-color: var(--off-white);
+    padding: 20px;
+    z-index: 10; /* Ensure the navigation bar is above other elements */
 }
 
 .navigator {
-  margin-top: 20px; /* Add margin-top to create space between the header and the navigation */
-  text-wrap: balance;
+    margin-top: 20px; /* Add margin-top to create space between the header and the navigation */
+    text-wrap: balance;
 }
 
 .nav-list {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 nav li a {
-  font-size: var(--size-3);
-  margin-bottom: 10px; /* Adjust spacing between each navigation item */
-  padding: 10px;
-  line-height: 1.1;
+    font-size: var(--size-3);
+    margin-bottom: 10px; /* Adjust spacing between each navigation item */
+    padding: 10px;
+    line-height: 1.1;
 }
 
 
@@ -291,7 +290,7 @@ footer p {
 }
 
 .container {
-  display: flex; /* Adjust this property based on your design needs */
+    display: flex; /* Adjust this property based on your design needs */
 }
 
 .center {
@@ -321,6 +320,7 @@ footer p {
 .display {
     font-family: 'library_3_amregular';
 }
+
 .novelty {
     font-family: 'summerbee';
 }
@@ -337,33 +337,34 @@ footer p {
 
 
 .centered {
-  text-align: center;
+    text-align: center;
 }
 
 .example {
-  height: 65em;
-  max-width: 100ch;
+    height: 65em;
+    max-width: 100ch;
 }
 
 
 :is(h1, h2, h3, *) {
-  --flow-space: 0.5em;
+    --flow-space: 0.5em;
 }
 
 
 a {
-  text-decoration-color: var(--color-primary);
-  text-decoration-thickness: 0.3ex;
-  text-underline-offset: 0.3ex;
+    text-decoration-color: var(--color-primary);
+    text-decoration-thickness: 0.3ex;
+    text-underline-offset: 0.3ex;
 }
 
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-      scroll-behavior: auto;
-  },
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important; 
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+, animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
 }
